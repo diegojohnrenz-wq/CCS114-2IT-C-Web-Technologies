@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Adventures | Explore the World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><i class="bi bi-compass-fill me-2 text-warning"></i>Wanderlust</a>
+            <button class="navbar-toggler" type="text-type" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="home" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#home" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#home" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#home" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url(beach.jpg)">
+                <div class="carousel-caption d-none d-md-block custom-caption">
+                    <h1 class="display-4 fw-bold">Explore Tropical Paradises</h1>
+                    <p class="lead">Discover hidden beaches and crystal clear waters around the globe.</p>
+                    <a href="#destinations" class="btn btn-warning btn-lg fw-semibold">Start Exploring</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url(backgroun.jpg);">
+                <div class="carousel-caption d-none d-md-block custom-caption">
+                    <h1 class="display-4 fw-bold">Conquer Majestic Peaks</h1>
+                    <p class="lead">Experience the thrill of mountain expeditions and trekking paths.</p>
+                    <a href="#packages" class="btn btn-warning btn-lg fw-semibold">View Packages</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url(streetsback.jpg);">
+                <div class="carousel-caption d-none d-md-block custom-caption">
+                    <h1 class="display-4 fw-bold">Immerse in Culture</h1>
+                    <p class="lead">Walk historical streets and taste authentic flavors worldwide.</p>
+                    <a href="#book" class="btn btn-warning btn-lg fw-semibold">Book a Trip</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+
+    
+    <div class="alert alert-warning alert-dismissible fade show rounded-0 mb-0 text-center fw-medium" role="alert">
+        <i class="bi bi-sparkles me-2"></i><strong>Flash Sale!</strong> Use code <strong>EXPLORE20</strong> for 20% off all summer tours.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <section id="destinations" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Popular Destinations</h2>
+                <p class="text-muted">Handpicked travel spots perfect for your next getaway</p>
+            </div>
+            <div class="row g-4">
+       
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                  
+                    <div class="card h-100 shadow-sm custom-card">
+                        <img src="bali.png" class="card-img-top" alt="Bali">
+                        <div class="card-body">
+                            
+                            <span class="badge bg-success mb-2">Nature</span>
+                            <h5 class="card-title fw-bold">Bali, Indonesia</h5>
+                            <p class="card-text text-muted">Experience serene beaches, vibrant cultural dances, and lush green rice terraces.</p>
+                        </div>
+                        <div class="card-footer bg-white border-top-0 pb-3">
+                            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#destinationModal" data-bs-city="Bali">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm custom-card">
+                        <img src="kyoto.jpg" class="card-img-top" alt="Kyoto">
+                        <div class="card-body">
+                            <span class="badge bg-danger mb-2">Culture</span>
+                            <h5 class="card-title fw-bold">Kyoto, Japan</h5>
+                            <p class="card-text text-muted">Discover timeless wooden shrines, historic temples, and exquisite traditional gardens.</p>
+                        </div>
+                        <div class="card-footer bg-white border-top-0 pb-3">
+                            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#destinationModal" data-bs-city="Kyoto">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm custom-card">
+                        <img src="paris.jpg" class="card-img-top" alt="Paris">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark mb-2">Romance</span>
+                            <h5 class="card-title fw-bold">Paris, France</h5>
+                            <p class="card-text text-muted">Stroll along the Seine, visit world-class museums, and enjoy café culture.</p>
+                        </div>
+                        <div class="card-footer bg-white border-top-0 pb-3">
+                            <button class="btn btn-outline-primary w-100" data-bs-toggle="modal" data-bs-target="#destinationModal" data-bs-city="Paris">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="services" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our Services</h2>
+                <p class="text-muted">We handle the logistics so you can focus on the journey</p>
+            </div>
+          
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-4 text-center">
+                <div class="p-4 shadow-sm border rounded-3 w-100">
+                    <div class="text-warning display-5 mb-3"><i class="bi bi-ticket-perforated-fill"></i></div>
+                    <h5 class="fw-bold">Easy Booking</h5>
+                    <p class="text-muted small mb-0">Seamless flight and hotel reservation system.</p>
+                </div>
+                <div class="p-4 shadow-sm border rounded-3 w-100">
+                    <div class="text-warning display-5 mb-3"><i class="bi bi-shield-check"></i></div>
+                    <h5 class="fw-bold">Travel Insurance</h5>
+                    <p class="text-muted small mb-0">Full coverage safety plans for unexpected events.</p>
+                </div>
+                <div class="p-4 shadow-sm border rounded-3 w-100">
+                    <div class="text-warning display-5 mb-3"><i class="bi bi-headset"></i></div>
+                    <h5 class="fw-bold">24/7 Support</h5>
+               
